@@ -25,7 +25,7 @@
                     <h2 class="text-black font-sans font-bold mt-1">Income</h2>
                     <div >
                         <h3  class="font-medium inline-block mr-1">Income:</h3>
-                        <input id="income-input-field" class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200" type="text" value = "10000" disabled>
+                        <input id="income-input-field" class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200" type="text">
                     </div>
                 </div>
                 <!-- Expenses -->
@@ -44,8 +44,8 @@
                     </div>
                     <!-- Cloths -->
                     <div >
-                        <h3   class="font-medium inline-block mr-1.5">Cloths:</h3>
-                        <input id="cloths" class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200  " type="text">
+                        <h3 class="font-medium inline-block mr-1.5">Clothes:</h3>
+                        <input id="clothes" class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200  " type="text">
                     </div>
                 </div>
                 <!-- Calculate Button -->
@@ -54,26 +54,26 @@
                 </div>
                 <!-- Total Expenses Text -->
                 <div class="text-center font-bold">
-                    <h4>Total Expenses: <span id="total-expenses"></span></h4>
+                    <h4>Total Expenses: <span id="total-expenses">0</span></h4>
                 </div>
                 <!-- Balance -->
                 <div class="text-center font-bold mt-2 mb-1">
-                    <h4>Balance: <span id="balance"></span></h4>
+                    <h4>Balance: <span id="balance">0</span></h4>
                 </div>
                 <!-- Save -->
                 <div class="text-center">
                     <h3 class="font-medium inline-block align-middle mr-1.5">Save:</h3>
-                    <button class="rounded px-1 py-1 mt-2 mb-2 bg-gray-400 text-black w-24">20</button>
+                    <input id="save-input" class="rounded px-1 py-1 mt-2 mb-2 bg-gray-400 text-black w-24">
                     <h3 class="inline-block"> % </h3>
-                    <button class="rounded px-1 py-1 mt-2 mb-2 bg-blue-400 text-white w-24">Save</button>
+                    <button id="save-button" class="rounded px-1 py-1 mt-2 mb-2 bg-blue-400 text-white w-24">Save</button>
                 </div>
                 <!-- Saving Amount -->
                 <div class="text-center font-bold mt-2">
-                    <h4>Saving Amount: <span id="saving-amount">2000</span></h4>
+                    <h4>Saving Amount: <span id="saving-amount">0</span></h4>
                 </div>
                 <!-- Remaining Balance -->
                 <div class="text-center font-bold mt-2">
-                    <h4>Remaining Balance: <span id="remaining-balance">2500</span></h4>
+                    <h4>Remaining Balance: <span id="remaining-balance">0</span></h4>
                 </div>
             </section>
         </section>
