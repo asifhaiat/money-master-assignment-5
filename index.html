@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-3xl text-center mt-2.5 font-sans font-bold text-indigo-500"><span class="font-momo font-bold text-fuchsia-900">Accounts</span> for living expenses and savings</h1>
+    </header>
+    <main>
+        <section class="mt-5 grid grid-cols-2 gap-4">
+            <!-- image add -->
+            <section>
+                <div class="ml-4">
+                    <img src="images/money.jpg" alt="money" width ="699"  height="815">
+                </div>
+            </section>
+            <!-- income left side -->
+            <section class="bg-zinc-100 rounded mr-4">
+                <!-- Income -->
+                <div class="text-center">
+                    <h2 class="text-black font-sans font-bold mt-1">Income</h2>
+                    <div >
+                        <h3 class="font-medium inline-block mr-1">Income:</h3>
+                        <input class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200 " type="text">
+                    </div>
+                </div>
+                <!-- Expenses -->
+                <div class="text-center">
+                    <h2 class="text-black font-sans font-bold mt-0.5">Expenses</h2>
+                    <!-- Food -->
+                    <div >
+                        <h3 class="font-medium inline-block   mr-4">Food:</h3>
+                        <input class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200 " type="text">
+                        
+                    </div>
+                    <!-- Rent -->
+                    <div >
+                        <h3 class="font-medium inline-block   mr-4">Rent:</h3>
+                        <input class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200  " type="text">
+                    </div>
+                    <!-- Cloths -->
+                    <div >
+                        <h3 class="font-medium inline-block   mr-1.5">Cloths:</h3>
+                        <input class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200  " type="text">
+                    </div>
+                </div>
+                <!-- Calculate Button -->
+                <div class="text-center">
+                    <button class="rounded px-1.5 py-1.5 mt-2 mb-2 bg-blue-400 text-white w-40">Calculate</button>
+                </div>
+                <!-- Total Expenses Text -->
+                <div class="text-center font-bold">
+                    <h4>Total Expenses: <span>5500</span></h4>
+                </div>
+                <!-- Balance -->
+                <div class="text-center font-bold mt-2 mb-1">
+                    <h4>Balance: <span>5500</span></h4>
+                </div>
+                <!-- Save -->
+                <div class="text-center">
+                    <h3 class="font-medium inline-block align-middle mr-1.5">Save:</h3>
+                    <button class="rounded px-1 py-1 mt-2 mb-2 bg-gray-400 text-black w-24">20</button>
+                    <h3 class="inline-block">%</h3>
+                    <button class="rounded px-1 py-1 mt-2 mb-2 bg-blue-400 text-white w-24">Save</button>
+                </div>
+                <!-- Saving Amount -->
+                <div class="text-center font-bold mt-2">
+                    <h4>Saving Amount: <span>2000</span></h4>
+                </div>
+                <!-- Remaining Balance -->
+                <div class="text-center font-bold mt-2">
+                    <h4>Remaining Balance: <span>2500</span></h4>
+                </div>
+            </section>
+        </section>
+    </main>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link js file -->
+    <script src="js/account.js"></script>
+</body>
+</html>
