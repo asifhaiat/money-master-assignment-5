@@ -46,10 +46,10 @@ document.getElementById("save-button").addEventListener("click", function () {
   );
   const totalBalance = document.getElementById("balance") || 0;
   const total = income - totalExpenses;
-  if (balance > 0) {
+  if (total > 0) {
     totalBalance.textContent = total;
-    // const errorBalance = document.getElementById("error-balance");
-    // errorBalance.style.display = "none";
+    const errorBalance = document.getElementById("error-balance");
+    errorBalance.style.display = "none";
   } else {
     const errorBalance = document.getElementById("error-balance");
     errorBalance.style.display = "block";
@@ -58,13 +58,14 @@ document.getElementById("save-button").addEventListener("click", function () {
   const remainingBalance = document.getElementById("remaining-balance");
   const balance = totalBalance.textContent - savingAmount.textContent;
 
-  if (balance < 0) {
-    const errorRemaining = document.getElementById("error-remaining");
-    errorRemaining.style.display = "block";
-  } else {
+  if (balance > 0) {
     remainingBalance.textContent = balance;
     const errorRemaining = document.getElementById("error-remaining");
     errorRemaining.style.display = "none";
+  } else {
+    
+    const errorRemaining = document.getElementById("error-remaining");
+    errorRemaining.style.display = "block";
   }
 });
 
