@@ -22,9 +22,9 @@
             <section class="bg-zinc-100 rounded drop-shadow-md mr-4 border border-r-pink-400 border-t-pink-900 border-l-rose-400 border-b-lime-500">
                 <!-- Income -->
                 <div class="text-center">
-                    <p id="error-message" style="display: none; color: red;">Only Numeric Value</p>
-                    <p id="error-balance" style="display: none; color: red;">Insufficient Balance</p>
-                    <p id="error-remaining" style="display: none; color: red;">Insufficient Balance</p>
+                    <p id="error-message" class="text-xl text-center mt-2.5 font-sans font-thin drop-shadow-md" style="display: none; color: red;">Only Numeric Value</p>
+                    <p id="error-balance" class="text-xl text-center mt-2.5 font-sans font-semibold drop-shadow-md" style="display: none; color: red;">You don't have enough money,Insufficient Balance!!</p>
+                    <p id="error-remaining" class="text-xl text-center mt-2.5 font-sans font-thin drop-shadow-md" style="display: none; color: red;">Sorry!you are trying to get too much save!!</p>
                     <h2 class="text-black font-sans font-bold mt-1">Income</h2>
                     <div >
                         <h3  class="font-medium inline-block mr-1">Income:</h3>
@@ -47,7 +47,7 @@
                     </div>
                     <!-- Cloths -->
                     <div >
-                        <h3 class="font-medium inline-block mr-1.5">Clothes:</h3>
+                        <h3 class="font-medium inline-block mr-0.5">Clothes:</h3>
                         <input id="clothes" class="rounded px-1 py-1 mt-2 mb-2 bg-slate-200 border border-r-pink-400 border-t-pink-900 border-l-rose-400 border-b-lime-500" type="text">
                     </div>
                 </div>
@@ -73,10 +73,12 @@
                 <!-- Saving Amount -->
                 <div class="text-center font-bold mt-2">
                     <h4>Saving Amount: <span id="saving-amount">0</span></h4>
+                    
                 </div>
                 <!-- Remaining Balance -->
                 <div class="text-center font-bold mt-2">
                     <h4>Remaining Balance: <span id="remaining-balance">0</span></h4>
+                    
                 </div>
             </section>
         </section>
